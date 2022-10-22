@@ -1,0 +1,61 @@
+.start{
+  position: absolute;
+  top: 20.278vw;
+  left: 36.944vw;
+  right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26.181vw;
+  height: 5.417vw;
+  .melody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    color: #888;
+    border-radius: 1.042vw 0 0 1.042vw;
+    background: #E1E5F2;
+    font-size: 1.250vw;
+    box-shadow: -0.5px 0.5px 0px rgba(0, 0, 0, 0.05), -2px 2px 2px rgba(0, 0, 0, 0.2), inset -5px 3px 9px 5px rgba(255, 211, 211, 0.25), inset -1px 1px 1px #FFFFFF, inset 1px -1px 6px rgba(0, 0, 0, 0.2);
+    filter: blur(0.5px);
+    p{
+      text-shadow: -0.5px 0.5px 0px rgba(0, 0, 0, 0.05), -2px 2px 2px rgba(0, 0, 0, 0.2), inset -5px 3px 9px 5px rgba(255, 211, 211, 0.25), inset -1px 1px 1px #FFFFFF, inset 1px -1px 6px rgba(0, 0, 0, 0.2);
+      filter: blur(0.5px);
+    }
+  }
+  .bass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    color: #888;
+    background: #E1E5F2;
+    border-radius: 0 1.042vw 1.042vw 0;
+    font-size: 1.250vw;
+    box-shadow: -0.5px 0.5px 0px rgba(0, 0, 0, 0.05), -2px 2px 2px rgba(0, 0, 0, 0.2), inset -5px 3px 9px 5px rgba(255, 211, 211, 0.25), inset -1px 1px 1px #FFFFFF, inset 1px -1px 6px rgba(0, 0, 0, 0.2);
+    filter: blur(0.5px);
+    p{
+      text-shadow: -0.5px 0.5px 0px rgba(0, 0, 0, 0.05), -2px 2px 2px rgba(0, 0, 0, 0.2), inset -5px 3px 9px 5px rgba(255, 211, 211, 0.25), inset -1px 1px 1px #FFFFFF, inset 1px -1px 6px rgba(0, 0, 0, 0.2);
+      filter: blur(0.5px);
+    }
+  }
+  .high{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    color: #888;
+    background: #E1E5F2;
+    font-size: 1.250vw;
+    box-shadow: -0.5px 0.5px 0px rgba(0, 0, 0, 0.05), -2px 2px 2px rgba(0, 0, 0, 0.2), inset -5px 3px 9px 5px rgba(255, 211, 211, 0.25), inset -1px 1px 1px #FFFFFF, inset 1px -1px 6px rgba(0, 0, 0, 0.2);
+    filter: blur(0.5px);
+    p{
+      text-shadow: -0.5px 0.5px 0px rgba(0, 0, 0, 0.05), -2px 2px 2px rgba(0, 0, 0, 0.2), inset -5px 3px 9px 5px rgba(255, 211, 211, 0.25), inset -1px 1px 1px #FFFFFF, inset 1px -1px 6px rgba(0, 0, 0, 0.2);
+      filter: blur(0.5px);
+    }
+  }
+}
