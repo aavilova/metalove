@@ -4,61 +4,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    .slider_path{
-      display: flex;
-      justify-content: center;
-      width: 24.722vw;
-      height: 3.333vw;
-      border-radius: 2.431vw;
-      background: white;
-      input[type=range]{
-        width: 21.389vw;
-        -webkit-appearance: none;
-        background: transparent;
+    width: 450.45px;
+    height: 102.96px;
+    left: 1356.47px;
+    top: 192.47px;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 3.96px 13.86px rgba(0, 0, 0, 0.25);
+    border-radius: 9.9px;
+    h3{
+      font-family: 'Neue Haas Unica';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 27.72px;
+      line-height: 28px;
+      /* identical to box height */
 
-      }
-      input[type=range]::-webkit-slider-runnable-track {
-        height: 0.278vw;
-        cursor: pointer;
-        background: #A6A6A6;
-        border-radius: 1.111vw;
-      }
-      input[type=range]::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        background: {
-          image: asset_url("thumb.jpg");
-        }
-        background-size: 125%;
-        background-position: center;
-        box-shadow: inset -1px 1px 1px #FFFFFF, inset 1px -1px 6px rgba(0, 0, 0, 0.2);
-        filter: blur(0.5px) drop-shadow(-0.5px 0.5px 0px rgba(0, 0, 0, 0.05)) drop-shadow(-2px 2px 2px rgba(0, 0, 0, 0.2));
-        height: 1.944vw;
-        width: 1.944vw;
-        border-radius: 50%;
-        cursor: pointer;
-        margin-top: -0.972vw; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-      }
+
+      color: rgba(255, 255, 255, 0.5);
     }
-  }
-}
-
-
-.prototype_body_2 {
-  .SC_Slider{
-    padding-top: .8vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     .slider_path{
       display: flex;
       justify-content: center;
-      width: 24.722vw;
-      height: 3.3vw;
-      background: #E1E5F2;
-      /* drop metalove */
-
-      box-shadow: -0.5px 0.5px 0px rgba(0, 0, 0, 0.05), -2px 2px 2px rgba(0, 0, 0, 0.2), inset -1px 1px 1px #FFFFFF, inset 1px -1px 6px rgba(0, 0, 0, 0.2);
-      filter: blur(0.5px);
       input[type=range]{
         width: 21.389vw;
         -webkit-appearance: none;
@@ -66,28 +33,24 @@
 
       }
       input[type=range]::-webkit-slider-runnable-track {
-        height: 0.278vw;
-        cursor: pointer;
-        background: #0015D3;
-        /* drop metalove */
+        width: 370.26px;
+        height: 11.88px;
+        /* . */
 
-        box-shadow: -0.5px 0.5px 0px rgba(0, 0, 0, 0.05), -2px 2px 2px rgba(0, 0, 0, 0.2), inset -1px 1px 1px #FFFFFF, inset 1px -1px 6px rgba(0, 0, 0, 0.2);
-        filter: blur(0.5px);
-        border-radius: 15px;
+        background: linear-gradient(90deg, #FFFFFF 45.74%, rgba(255, 255, 255, 0) 98.53%);
+        filter: drop-shadow(3.96px 3.96px 3.96px rgba(0, 0, 0, 0.25));
+        border-radius: 9.9px;
       }
       input[type=range]::-webkit-slider-thumb {
         -webkit-appearance: none;
-        background: {
-          image: asset_url("thumb.jpg");
-        }
-        background-size: 125%;
-        background-position: center;
-        box-shadow: inset -1px 1px 1px #FFFFFF, inset 1px -1px 6px rgba(0, 0, 0, 0.2);
+
+        background: #FFFFFF;
+        box-shadow: 3.96px 3.96px 3.96px rgba(0, 0, 0, 0.25);
         height: 1.944vw;
         width: 1.944vw;
         border-radius: 50%;
         cursor: pointer;
-        margin-top: -0.972vw; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+        margin-top: -0.472vw; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
       }
     }
   }

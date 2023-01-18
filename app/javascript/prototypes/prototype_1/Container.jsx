@@ -3,7 +3,6 @@ import React, { Component } from 'react'
 
 import * as bassSettings from './tunes/bass.js'
 import * as melodySettings from './tunes/melody.js'
-import * as metaloveSettings from './tunes/metalove.js'
 import * as highSettings from './tunes/high.js'
 
 import ToneSynth from './modules/ToneSynth.jsx'
@@ -33,8 +32,7 @@ export default class Container extends Component {
     this.state = {
       highSettings,
       bassSettings,
-      melodySettings,
-      metaloveSettings
+      melodySettings
     }
   }
 
@@ -70,28 +68,6 @@ export default class Container extends Component {
     melodyPart.loop = true
     //
     //
-    const sampler = new Tone.Sampler({
-    	urls: {
-    		A1: "metalove.mp3",
-    		A2: "metalove.mp3",
-    	},
-    	baseUrl: "http://localhost:3000/samples/",
-    	// onload: () => {
-    	// 	sampler.triggerAttackRelease(["C1", "E1", "G1", "B1"], 10);
-    	// }
-    }).toDestination();
-
-    const metalovePart = new Tone.Part((time, note) => {
-      sampler.triggerAttackRelease(
-        note.noteName,
-        note.duration,
-        time,
-        note.velocity
-      )
-    }, metaloveSettings.sequence.steps).start(0)
-
-    metalovePart.loopEnd = metaloveSettings.sequence.duration
-    metalovePart.loop = true
 
     Tone.Transport.start()
   }
@@ -276,34 +252,9 @@ export default class Container extends Component {
 
     return (
       <div className="Container">
-        <div className="desclaimer">
-          your love is a wire <br/>
-          make it sound out loud <br/>
-          <br/>
-          press cmd + R to restart your feeling of love
-        </div>
-        <div className="start">
-          <div className="melody">
-            <SC_Button
-              text="left"
-              handleClick={this.handleMelodyStart}
-            />
-          </div>
-          <div className="high">
-            <SC_Button
-              text="center"
-              handleClick={this.handleHighStart}
-            />
-          </div>
-          <div className="bass">
-            <SC_Button
-              text="right"
-              handleClick={this.handleBassStart}
-            />
-          </div>
-        </div>
 
         <div className="one">
+          <h1>Melody</h1>
           <ToneSynth
             settings={melodySettings}
             handleValueChange={this.handleMelodyValueChange}
@@ -335,11 +286,17 @@ export default class Container extends Component {
               value={melodySettings.freeverb.wet}
               handleChange={this.handleMelodyValueChange}
             />
-
+          </div>
+          <div className="melody">
+            <SC_Button
+              text="On"
+              handleClick={this.handleMelodyStart}
+            />
           </div>
         </div>
 
         <div className="two">
+          <h1>Bass</h1>
           <ToneSynth
             settings={bassSettings}
             handleValueChange={this.handleBassValueChange}
@@ -371,9 +328,16 @@ export default class Container extends Component {
             />
 
           </div>
+          <div className="bass">
+            <SC_Button
+              text="On"
+              handleClick={this.handleBassStart}
+            />
+          </div>
         </div>
 
         <div className="three">
+          <h1>Noise</h1>
           <ToneSynth
             settings={highSettings}
             handleValueChange={this.handleHighValueChange}
@@ -394,6 +358,21 @@ export default class Container extends Component {
               max={1}
               value={highSettings.pingPongDelay.wet}
               handleChange={this.handleHighValueChange}
+            />
+            <SC_Knob
+              name="freeverb"
+              property="freeverbWet"
+              min={0}
+              max={1}
+              value={highSettings.pingPongDelay.wet}
+              handleChange={this.handleHighValueChange}
+            />
+
+          </div>
+          <div className="noise">
+            <SC_Button
+              text="On"
+              handleClick={this.handleHighStart}
             />
           </div>
         </div>

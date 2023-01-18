@@ -38,16 +38,6 @@ export default class ToneSynth extends Component {
         />
 
         <SC_Slider
-          name="sustain"
-          min={0}
-          max={1}
-          step={0.01}
-          value={settings.synth.envelope.sustain}
-          property="synthEnvelopeSustain"
-          handleChange={handleValueChange}
-        />
-
-        <SC_Slider
           name="release"
           min={0}
           max={10}

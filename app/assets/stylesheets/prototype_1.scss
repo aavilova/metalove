@@ -1,11 +1,14 @@
 .prototype_body_1 {
   background: {
-    image: asset_url("synthbg.jpg");
+    image: asset_url("1.jpg");
   }
-  background-size: 100%;
+  background-size: 150%;
   background-position: center;
+  .Container{
+    height: 120vh;
+  }
 }
 
 #prototype_1 {
-  
+
 }

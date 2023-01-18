@@ -1,9 +1,6 @@
 @prototypes_data = [
   {
-    name: 'metalove'
-  },
-  {
-    name: 'metaverse'
+    name: 'synth'
   }
 ]
 
